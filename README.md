@@ -1,19 +1,37 @@
-# **Project Name**
+# Project Name
 
-This project is built using Node.js, PostgreSQL, Redis, and pgAdmin4. Below are step-by-step instructions to set up and run the project.
+Brief description of your project.
 
-## **Prerequisites**
+## Getting Started
 
-Before running this project, ensure that you have the following installed:
+To run your project, follow these steps.
 
-- [Node.js](https://nodejs.org/)
-- [Docker](https://www.docker.com/)
+### Prerequisites
 
-## **Setup Instructions**
+- [Node.js](https://nodejs.org/) must be installed
+- [Docker](https://www.docker.com/products/docker-desktop) must be installed
 
-### **Step 1: Clone the Project**
-Clone the project to your local machine and navigate to the project directory:
+### Installation
 
-```bash
-git clone https://github.com/username/project.git
-cd project
+1. Clone the project repository and navigate to the project folder:
+
+   ```bash
+   git clone https://github.com/yourusername/yourproject.git
+   cd yourproject
+2. Start Docker and run the project using Docker Compose:
+
+```
+  docker-compose up
+This command starts all services defined in your Docker Compose file.
+```
+3. Ensure Redis is installed on Docker with the appropriate port configuration. Check that the Redis service in your Docker Compose file looks like this:
+```
+  redis:
+  image: redis
+  ports:
+    - "6379:6379"
+```
+4. Once the PostgreSQL, pgAdmin4, and Redis containers are running, install the project dependencies:
+```
+  npm start
+```
