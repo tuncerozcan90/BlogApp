@@ -16,7 +16,7 @@ To run your project, follow these steps.
 1. Clone the project repository and navigate to the project folder:
 
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/tuncerozcan90/blogapp.git
    cd yourproject
 2. Start Docker and run the project using Docker Compose:
 
