@@ -7,9 +7,9 @@ const config = {
         prot: 5432
     },
     email: {
-        username: "tuncerozcan90@gmail.com",
-        password: "yldh fobg yuxg bewb",
-        from: "tuncerozcan90@gmail.com"
+        username: "your_mail",
+        password: "your_mail_password",
+        from: "your_mail"
     }
 }
 
